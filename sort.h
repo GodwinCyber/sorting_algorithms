@@ -37,6 +37,11 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
+void swap_ints(int *a, int *b);
+void bitonic_merge(int *array, size_t size, size_t start, size_t seq,
+		char flow);
+void bitonic_seq(int *array, size_t size, size_t start, size_t seq, char flow);
+void bitonic_sort(int *array, size_t size);
 void swap_nodes(listint_t **list, listint_t *node1, listint_t *node2);
 void cocktail_sort_list(listint_t **list);
 void shell_sort(int *array, size_t size);
